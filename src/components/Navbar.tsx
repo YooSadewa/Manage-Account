@@ -16,9 +16,9 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <ActiveLink href="/">Home</ActiveLink>
-          <ActiveLink href="/group">Manage Group Account</ActiveLink>
-          <ActiveLink href="/profile">Manage My Profile</ActiveLink>
+          <ActiveLink href="/" additionalClass="text-sm/6 font-semibold text-white">Home</ActiveLink>
+          <ActiveLink href="/group" additionalClass="text-sm/6 font-semibold text-white">Manage Group Account</ActiveLink>
+          <ActiveLink href="/profile" additionalClass="text-sm/6 font-semibold text-white">Manage My Profile</ActiveLink>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button onClick={() => signOut({ callbackUrl: "/login" })} className="text-sm font-semibold text-white">
