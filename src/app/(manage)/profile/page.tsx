@@ -29,7 +29,7 @@ export default function ManageProfile() {
     }));
   };
   const handleSubmit = (e: any) => {
-    e.preventDefault();
+    e.preventDefault(); 
     console.log("Saving profile:", userProfile);
   };
 
